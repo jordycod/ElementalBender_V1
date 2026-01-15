@@ -1,7 +1,7 @@
 // Classe Fire: motor de partículas/visual de "fogo"
 
 public class Fire {
- // --- Dimensões da janela / mapa interno ---
+ // Dimensões da janela / mapa interno ---
  int window_size_x;  // largura útil (em pixels) que o engine cobre
  int window_size_y;  // altura útil (em pixels) que o engine cobre
 
@@ -9,13 +9,13 @@ public class Fire {
  // A alocação considera margem (fire_power) para deslocamentos durante a simulação.
  public int[][] pixel_map;
 
- // --- Parâmetros do motor ---
+ // Parâmetros do motor ---
  public int fire_length;  // comprimento (opcional) do efeito em algumas overloads
  public int fire_power;  // margem/alcance usado na difusão/propagação
  public int fire_decay;  // fator de decaimento aleatório
  public color tintColor = color(255, 255, 255); // multiplicador de cor por engine (tint)
 
- // --- Paleta de cor (R,G,B) ---
+ // Paleta de cor (R,G,B) ---
  // Arrays com a paleta do fogo (valores 0..255). Cada índice descreve um "nível" de intensidade.
  int pixel_size = 20; // usado apenas na função palette_color_show (visualização)
  int[] R = {
@@ -39,13 +39,13 @@ public class Fire {
  int[] random_table = {0, 1, 1, 1, 1};
  public int particleAlpha = 255; // alpha global para render das partículas (0..255)
 
- // --- Utilitários públicos ---
+ // Utilitários públicos ---
  // Ajusta opacidade das partículas em tempo de execução (uso em draw/modos)
  public void setParticleAlpha(int a) {
   particleAlpha = constrain(a, 0, 255);
  }
 
- // --- Construtores ---
+ // Construtores ---
  // Várias assinaturas para conveniência (compatíveis com o código original)
  public Fire() {
   // construtor vazio: usa setters/atribuições posteriores
@@ -79,7 +79,7 @@ public class Fire {
   pixel_map = new int[window_size_x + 2 * fire_power][window_size_y];
  }
 
- // --- Inserção de fontes ---
+ // Inserção de fontes ---
  // Coloca uma fonte circular de intensidade fixa (30) dentro do pixel_map,
  // deslocando o índice por fire_power para manter margem interna.
  void place_circle_fire_source(int radius, int cx, int cy) {
@@ -96,7 +96,7 @@ public class Fire {
   }
  }
 
- // --- Função utilitária de decaimento aleatório ---
+ // Função utilitária de decaimento aleatório ---
  // Retorna um pequeno inteiro aleatório usado na atualização do fogo.
  int decay_random(int fire_decay) {
   int r = int(random(fire_decay));
@@ -106,7 +106,7 @@ public class Fire {
   return r;
  }
 
- // --- Atualização da simulação do fogo ---
+ // Atualização da simulação do fogo ---
  // Propaga valores no pixel_map de baixo para cima e aplica decaimento/aleatoriedade.
  void fire_update() {
   // percorre cada célula do mapa (evitando a margem fire_power)
@@ -129,7 +129,7 @@ public class Fire {
   }
  }
 
- // --- Renderização --- 
+ // Renderização 
  // Transforma índices do pixel_map em cores reais da tela usando a paleta,
  // aplicando também um tintColor multiplicativo e particleAlpha.
  void screen_update() {

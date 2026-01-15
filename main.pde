@@ -360,18 +360,18 @@ void draw() {
     // HUD: pontuação, FPS e recorde
     textFont(lastShuriken);
     textAlign(CENTER);
-    textSize(35);
+    textSize(40);
     fill(255);
-    text(pontuacao, width - 135, height - 20);
-    textSize(25);
+    text(pontuacao, width - 130, height - 20);
+    textSize(30);
     fill(175, 245, 65);
-    text(obterRecorde(), width - 30, height - 30);
+    text(obterRecorde(), width - 45, height - 30);
 
     fill(255);
     textSize(12);
-    text("PONTOS", width -135, height - 60);
+    text("PONTOS", width - 130, height - 60);
     text("FPS " + int(frameRate), width - 60, 25);
-    text("RECORDE", width - 30, height - 60);
+    text("RECORDE", width - 45, height - 60);
 
     // Desenha a barra de tempo
     exibirTimer();

@@ -194,7 +194,7 @@ void drawCustomCursor() {
 }
 
 void exibirTimer() {
-  textFont(bagel);
+  textFont(lastShuriken);
   if (estadoJogo != ESTADO_AGUA) return;
 
   // tempo decorrido desde o início da partida
@@ -277,12 +277,13 @@ void exibirTimer() {
   rect(bx, by, bw, bh, 6);
 
   // Texto com segundos restantes ao lado da barra
+  textFont(lastShuriken);
   noStroke();
   fill(255);
-  textSize(25);
+  textSize(23);
   textAlign(LEFT, CENTER);
   String segs = str(int(ceil(tempoRestante / 1000.0)));
-  text(segs, bx + bw + 8, by + bh / 2);
+  text(segs, bx + bw + 10, by + bh / 2);
 }
 
 // Desenha overlay vermelho quando intensity > 0 (feedback visual de erro/perda)
@@ -301,18 +302,13 @@ void drawFinalScreen() {
   textFont(hoshiko);
   textAlign(CENTER, CENTER);
   fill(90, 65, 0);
-  textSize(120);
+  textSize(100);
   text(pontuacao, 265, height / 2 - 45);
   fill(40);
   textSize(50);
   text(obterRecorde(), 400, height / 2 - 45);
   textSize(15);
   text("RECORDE", 400, height / 2);
-
-  if (pontuacaoSalva) {
-    textSize(20);
-    text("PONTUAÇÃO SALVA", width / 2, height / 2 + 20);
-  }
 }
 
 

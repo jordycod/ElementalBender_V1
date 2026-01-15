@@ -1,13 +1,11 @@
-// ====================================================================
+
 // IMPORTS - Bibliotecas externas e utilitários usados no sketch:
-// ====================================================================
+
 import processing.sound.*;  // áudio/música
 import java.util.ArrayList;  // listas dinâmicas
 import SimpleOpenNI.*;  // Kinect SimpleOpenNI
 
-// ====================================================================
 // CONSTANTES E ESTADOS - Definições constantes usadas em todo o sketch
-// ====================================================================
 final int BTN_COUNT = 3;
 
 final int ESTADO_MENU = 0;
@@ -19,10 +17,7 @@ final int ESTADO_FOGO = 5;
 final int ESTADO_INTRO = 6;
 final int ESTADO_TUTORIAL_SLIDES = 7;
 
-// ====================================================================
 // VARIÁVEIS GLOBAIS (AGRUPADAS POR TEMA)
-// ====================================================================
-
 // KINECT / ÁUDIO - Objetos responsáveis por captura do Kinect e reprodução de som.
 SimpleOpenNI kinect;  // objeto de interação com Kinect
 SoundFile musica, target;  // música de fundo e som de "target"

@@ -10,7 +10,7 @@ void resourcesManager() {
   
   // Carrega fontes
   bagel = loadFont("BagelFatOne-Regular-48.vlw");
-  hoshiko = loadFont("BagelFatOne-Regular-48.vlw");
+  hoshiko = loadFont("Hoshiko_Satsuki-48.vlw");
   lastShuriken = loadFont("TheLastShuriken-Regular-48.vlw");
   textFont(bagel);
   textAlign(CENTER, CENTER);
@@ -25,13 +25,17 @@ void resourcesManager() {
   imgSurpriseTarget = loadImage("sprites/imgSurpriseTarget.png"); // deixe como null se não houver arquivo
   if (imgSurpriseTarget != null) imgSurpriseTarget.resize(50, 50);
   imgPainelJogo = loadImage("buttons/agua_painel_inf.png");
+  
   telaRanking = loadImage("backgrounds/Tela_Ranking.png");
+  if (telaRanking != null) telaRanking.resize(width, height);
   telaInicial = loadImage("backgrounds/Tela_Inicial.png");
+  if (telaInicial != null) telaInicial.resize(width, height);
   telaFinal = loadImage("backgrounds/Tela_Final.png");
+  if (telaFinal != null) telaFinal.resize(width, height);
   telaFogo = loadImage("backgrounds/Tela_Fogo.png");
-  imgTutorial = loadImage("help/Tutorial.png");
+  if (telaFogo != null) telaFogo.resize(width, height);
 
-  // --- Menu buttons (ÁGUA / FOGO / RANK) ---
+  // Menu buttons (ÁGUA / FOGO / RANK) 
   btnImgNormal[0] = loadImage("buttons/btn_agua_normal.png");
   btnImgHover[0] = loadImage("buttons/btn_agua_hover.png");
   btnImgNormal[1] = loadImage("buttons/btn_fogo_normal.png");
@@ -39,12 +43,12 @@ void resourcesManager() {
   btnImgNormal[2] = loadImage("buttons/btn_ranking_normal.png");
   btnImgHover[2] = loadImage("buttons/btn_ranking_hover.png");
 
-  // --- Help & Sound icons ---
+  // Help & Sound icons 
   iconeAjuda = loadImage("buttons/btn_help.png");
   iconeSomLigado = loadImage("buttons/btn_sound_on.png");
   iconeSomDesligado = loadImage("buttons/btn_sound_off.png");
 
-  // --- Final screen buttons (TELA INICIAL, REINICIAR, SALVAR) ---
+  // Final screen buttons (TELA INICIAL, REINICIAR, SALVAR) 
   finalBtnImgNormal[0] = loadImage("buttons/btn_home_normal.png");
   finalBtnImgHover[0] = loadImage("buttons/btn_home_hover.png");
   finalBtnImgNormal[1] = loadImage("buttons/btn_restart_normal.png");
@@ -52,11 +56,11 @@ void resourcesManager() {
   finalBtnImgNormal[2] = loadImage("buttons/btn_save_normal.png");
   finalBtnImgHover[2] = loadImage("buttons/btn_save_hover.png");
 
-  // --- Ranking "VOLTAR" button ---
+  // Ranking "VOLTAR" button 
   imgVoltarNormal = loadImage("buttons/btn_voltar_normal.png");
   imgVoltarHover = loadImage("buttons/btn_voltar_hover.png");
 
-  // --- Nick keyboard buttons (GRAVAR/VOLTAR) images (optional) ---
+  // Nick keyboard buttons (GRAVAR/VOLTAR) images (optional) 
   nickBtnImgNormal = new PImage[2];
   nickBtnImgHover = new PImage[2];
   nickBtnImgNormal[0] = loadImage("buttons/btn_save_rank_normal.png");
@@ -64,14 +68,18 @@ void resourcesManager() {
   nickBtnImgNormal[1] = loadImage("buttons/btn_voltar_normal.png");
   nickBtnImgHover[1] = loadImage("buttons/btn_voltar_hover.png");
 
-  // --- Intro / Tutorial slides assets ---
+  // Intro / Tutorial slides assets 
   introLogo = loadImage("intro/logo.png");
-  // slides: carregar dinamicamente (3 slides). se arquivo não existir, slide fica null e será ignorado
+  // slides: carregar dinamicamente (4 slides). se arquivo não existir, slide fica null e será ignorado
   tutorialSlides = new PImage[4];
   tutorialSlides[0] = loadImage("tutorial/tutorial_1.png");
+  if (tutorialSlides[0] != null) tutorialSlides[0].resize(width, height);
   tutorialSlides[1] = loadImage("tutorial/tutorial_2.png");
+  if (tutorialSlides[1] != null) tutorialSlides[1].resize(width, height);
   tutorialSlides[2] = loadImage("tutorial/tutorial_3.png");
+  if (tutorialSlides[2] != null) tutorialSlides[2].resize(width, height);
   tutorialSlides[3] = loadImage("tutorial/tutorial_4.png");
+  if (tutorialSlides[3] != null) tutorialSlides[3].resize(width, height);
 
   // botões laterais para avançar/concluir
   slideNextNormal = loadImage("buttons/btn_slide_next_normal.png");
