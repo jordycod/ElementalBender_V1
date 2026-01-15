@@ -1,18 +1,6 @@
-# 🌊🔥 Elemental Bender
+## 📋 Visão Geral - 🌊🔥 Elemental Bender
 
-Um jogo experimental de interação gestual que permite ao jogador manipular os elementos Água e Fogo através de movimentos corporais, inspirado na série animada **Avatar: The Last Airbender**.
-
-<img width="1090" height="411" alt="LOGOTIPO" src="https://github.com/user-attachments/assets/944f3350-0a69-4c5c-bd93-289c306c15a4" />
-<img width="1280" height="720" alt="vlcsnap-2026-01-14-11h58m13s118" src="https://github.com/user-attachments/assets/04fa69ba-ebc6-4b06-8afa-9b7623b4af96" />
-<img width="640" height="480" alt="Tela Inicial" src="https://github.com/user-attachments/assets/d5c0cbbb-db36-48da-bed3-6fd14ac75930" />
-<img width="1280" height="720" alt="vlcsnap-2026-01-14-09h17m41s586" src="https://github.com/user-attachments/assets/77552c6f-4810-4e48-80d5-aa24f1758c00" />
-<img width="1280" height="720" alt="vlcsnap-2026-01-14-10h53m10s710" src="https://github.com/user-attachments/assets/3226d6e5-293f-4b46-9ecb-baec05344f95" />
-
----
-
-## 📋 Visão Geral
-
-**Elemental Bender** é um projeto de conclusão de curso que explora as possibilidades de Interfaces Naturais de Usuário (NUI) utilizando o sensor Microsoft Kinect V1 e o ambiente Processing. O jogo oferece duas experiências imersivas:
+**Elemental Bender** é um jogo experimental que explora as possibilidades de Interfaces Naturais de Usuário (NUI) utilizando o sensor Microsoft Kinect V1 e o ambiente Processing. O jogo oferece duas experiências imersivas:
 
 - **Modo Água (Arcade)**: Um jogo de reflexo onde você controla uma massa de água para interceptar alvos caindo pela tela
 - **Modo Fogo (Artístico)**: Uma experiência visual interativa onde seus movimentos controlam partículas de fogo, ideal para apresentações artísticas
@@ -401,3 +389,9 @@ Para problemas técnicos ou dúvidas:
 
 **Última atualização**: Janeiro de 2026  
 **Versão**: 1.0 Beta
+
+<img width="1090" height="411" alt="LOGOTIPO" src="https://github.com/user-attachments/assets/944f3350-0a69-4c5c-bd93-289c306c15a4" />
+<img width="1280" height="720" alt="vlcsnap-2026-01-14-11h58m13s118" src="https://github.com/user-attachments/assets/04fa69ba-ebc6-4b06-8afa-9b7623b4af96" />
+<img width="640" height="480" alt="Tela Inicial" src="https://github.com/user-attachments/assets/d5c0cbbb-db36-48da-bed3-6fd14ac75930" />
+<img width="1280" height="720" alt="vlcsnap-2026-01-14-09h17m41s586" src="https://github.com/user-attachments/assets/77552c6f-4810-4e48-80d5-aa24f1758c00" />
+<img width="1280" height="720" alt="vlcsnap-2026-01-14-10h53m10s710" src="https://github.com/user-attachments/assets/3226d6e5-293f-4b46-9ecb-baec05344f95" />
